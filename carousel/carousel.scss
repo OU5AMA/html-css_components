@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.carousel{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    .indicator{
+        height: 200px;
+        position: fixed;
+        top: 200px;
+        margin: 0%;
+        z-index: 1;
+        background: none;
+        color: rgba( #fff, .5);
+        cursor: pointer;
+        border: none;
+        &:hover{
+            border: 2px solid rgba(#fff, .5);
+        }
+    }
+    .left_indicator{
+        left: 20px;
+    }
+    .right_indicator{
+        right: 20px;
+    }
+
+    .carousel__track_container{
+        margin: 0px;
+        padding: 0px;
+
+        .carousel__track{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .carousel__slide{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            img{
+                
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                z-index: -1;
+                // background: linear-gradient(1deg, #fff, .5);
+            }
+        }
+    }
+}

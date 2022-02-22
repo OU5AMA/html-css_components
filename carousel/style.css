@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.carousel {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.carousel .indicator {
+  height: 200px;
+  position: fixed;
+  top: 200px;
+  margin: 0%;
+  z-index: 1;
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border: none;
+}
+.carousel .indicator:hover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.carousel .left_indicator {
+  left: 20px;
+}
+.carousel .right_indicator {
+  right: 20px;
+}
+.carousel .carousel__track_container {
+  margin: 0px;
+  padding: 0px;
+}
+.carousel .carousel__track_container .carousel__track {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.carousel .carousel__track_container .carousel__slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.carousel .carousel__track_container .carousel__slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */
